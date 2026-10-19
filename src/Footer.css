@@ -1,0 +1,43 @@
+/* Dark band at the bottom of the page */
+.footer {
+    margin-top: auto;              /* pushes the footer to the bottom (#root is a flex column) */
+    margin-bottom: -24px;          /* cancels #root's bottom padding: sticks to the bottom edge */
+    background: var(--ink);      /* button color at rest */
+    color: var(--card);
+    padding: 24px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1px;
+
+    /* Full width: a solid shadow extends the green to both screen edges,
+       and clip-path cuts it off at the top and bottom.
+       A shadow doesn't take up space, so no horizontal scrollbar. */
+    box-shadow: 0 0 0 100vmax var(--ink);
+    clip-path: inset(0 -100vmax);
+}
+.footer__brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer__tagline {
+    margin: 0;
+    font-family: var(--heading);
+    font-size: 18px;
+}
+
+.footer__links {
+    display: flex;
+    gap: 24px;
+}
+
+/* Light links on the dark band (overrides the default link color) */
+.footer__links a {
+    color: var(--card);
+}
+.footer__links a:hover {
+    color: var(--yellow);
+}

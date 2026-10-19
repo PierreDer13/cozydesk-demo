@@ -1,0 +1,12 @@
+.loader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 48px 0;
+}
+
+.loader-text {
+  font-family: var(--heading);
+  font-size: 20px;
+}

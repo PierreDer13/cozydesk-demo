@@ -1,0 +1,85 @@
+.screen {
+  background: var(--bg-section);
+  border: var(--border);
+  padding: 12px;
+  box-shadow: 6px 6px 0 var(--ink);
+}
+
+.screen-bar {
+  background: var(--green);
+  color: var(--card);
+  font-family: var(--heading);
+  padding: 4px 10px;
+  margin-bottom: 8px;
+}
+
+.screen-body {
+  background: var(--card);
+  border: 6px solid var(--ink);
+  padding: 16px;
+  height: 220px;
+  overflow-y: auto;
+}
+
+.screen-foot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.screen-label {
+  font-family: var(--heading);
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.screen-led {
+  width: 10px;
+  height: 10px;
+  background: var(--green);
+}
+
+.screen-stand {
+  width: 30%;
+  height: 14px;
+  background: var(--bg-section);
+  border: var(--border);
+  border-top: none;
+  margin: 0 auto;
+}
+
+.hero--split {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+  flex-wrap: wrap;
+  max-width: 1100px;
+}
+
+.hero-text,
+.hero-screen {
+  flex: 1 1 360px;
+  min-width: 0;
+}
+
+.hero-screen {
+  background: url("/room.svg") center / 100% 100% no-repeat;
+  padding: 28px 14% 70px;
+}
+
+.screen-actions {
+  display: flex;
+  align-items: flex-end;
+  gap: 12px;
+}
+
+.screen-actions form {
+  flex: 1;
+  min-width: 0;
+  margin-bottom: 0;
+}
+
+.screen-body .loader {
+  padding: 16px 0;
+}

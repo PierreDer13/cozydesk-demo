@@ -1,0 +1,16 @@
+.about {
+  margin: 40px auto;
+}
+
+.about ul {
+  list-style: square;
+  padding-left: 20px;
+}
+
+.about li {
+  margin-bottom: 8px;
+}
+
+.about li::marker {
+  color: var(--green);
+}
